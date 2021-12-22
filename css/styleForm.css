@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body{
+    font-family: Fira Sans;
+    background: #fff;
+    text-decoration: none;
+    background-color: #f2f5f7;
+}
+.main__wrapper{
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+	margin: 80px auto;
+	width: 400px;
+	padding: 0px;
+}
+.container form{
+	padding: 0px;
+}
+.btn1{
+	text-align: center;
+}
+.text{
+	color: #666;
+	font-size: 100%;
+	text-align: center;
+}
+.text a{
+	color: #2493df;
+	text-decoration: none;
+
+}
+.container h2{
+	font-size: 26px;
+    color: #666;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.wrapper{
+	display: inline;
+}
+.label{
+	margin-bottom: 8px;
+}
+.container p{
+	color: #6b7f99;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    
+    outline: none;
+    border: none;
+    text-align: left;
+}
+button.btn{
+	margin-top: 16px;
+	color: #f9f9fa;
+    background-color: #2493df;
+    border: none;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    width: 400px;
+    outline: none;
+    transition: background-color .1s linear;
+    margin-bottom: 20px;
+}
+
+input.form-group{
+	height: 48px;
+    padding: 16px;
+    border: 1px solid #c8d2db;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 120%;
+    color: #2d3846;
+    width: 100%;
+}
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}

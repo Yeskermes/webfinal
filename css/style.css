@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f2f5f7;
+}
+.slider{
+	width: 90%;
+	margin: 0px auto;
+}
+
+.wrapper{
+	position: relative;
+	top: -100px;
+	background-color: white;
+	width: 80%;
+	margin: 0px auto;
+	height: 315px;
+	border-radius: 5px;
+}
+.slider__container{
+	overflow: hidden;
+}
+.slider__track{
+	background-color: white;
+	display: flex;
+	transition: .2s;
+}
+.slider__item{
+	margin-top: 28px;
+	padding: 32px 24px 16px;
+	text-align: center;
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	background: #eaf0f3;
+	border: 13px solid white;
+	border-radius: 10%;
+}
+.slider__image{
+	height: 100px;
+	width: 100px;
+	border-radius: 10%;
+	margin-bottom: 20px;
+}
+.slider__item a{
+	text-decoration: none;
+	color: #2D3846;
+}
+.btn-prev{
+	position: absolute;
+	left: 25px;
+	top: 135px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.btn-next{
+	position: absolute;
+	right: 25px;
+	top: 135px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.fas{
+	font-size: 28px;
+}
+.about{
+	width: 100%;
+	padding-bottom: 200px;
+}
+.about__grid{
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 28% 28% 28%;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 40px;
+	grid-template-areas: 
+	"a b c" 
+	"d d e";
+}
+.about__item{
+	background-color: white;
+	text-align: center;
+	line-height: 1.5;
+	box-sizing: border-box;
+	padding-bottom: 60px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.about__item h2{
+	font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #2d3846;
+    font-family: "Fira Sans", sans-serif;
+}
+.about__item p{
+	color: #6b7f99;
+    white-space: pre-wrap;
+    padding: 16px 48px 0px 48px;
+    font-size: 20px;
+    font-family: "Fira Sans", sans-serif;
+    box-sizing: border-box;
+}
+.about__image{
+	width: 100%;
+	height: 100%;
+}
+.about__item_a{
+	grid-area: a;
+}
+.about__item_b{
+	grid-area: b;
+	padding-bottom: 0px;
+}
+.about__item_c{
+	grid-area: c;
+}
+.about__item_d p{
+	padding-left: 0px;
+}
+.about__item_d{
+	display: flex;
+	grid-area: d;
+	text-align: left;
+	padding-left: 5%;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	align-items: center;
+}
+.about__item_e{
+	grid-area: e;
+}
+.about__image-link{
+	height: 50px;
+	width: 160px;
+	margin-left: 15px;
+	margin-top: 40px;
+}
+.about__text_marked{
+	font-weight: 600;
+	color: #6b7f99;
+}
+.about__item_link a{
+	margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2493df;
+    text-decoration: none;
+}
+.about__text_special{
+	padding-top: 0px;
+	color: #6b7f99;
+    white-space: pre-wrap;
+    font-size: 20px;
+    font-family: "Fira Sans", sans-serif;
+}
+.about__image_d{
+	width: 500px;
+	height: 500px;
+}
+@media screen and (max-width: 1600px) {
+	.about__image-link{
+		height: 40px;
+		width: 130px;
+	}
+}
+@media screen and (max-width:  1522px) {
+	*{
+		font-size: 18px;
+	}
+	.about .about__grid .about__item div p{
+		font-size: 18px;
+	}
+	.about .about__grid .about__item div h2{
+		font-size: 28px;
+	}
+	.about .about__grid .about__item .about__text_special{
+		font-size: 18px;
+	}
+	.about .about__grid .about__item .about__item_link a{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.about__image-link{
+		height: 30px;
+		width: 100px;
+	}
+	.about__image_d{
+		width: 80%;
+		height: 80%;
+	}
+	.about__text{
+		padding-top: 100px;
+	}
+	.about__image_d{
+	width: 300px;
+	height: 300px;
+}
+}
+
+@media screen and (max-width: 650px) {
+	.wrapper{
+		width: 100%;
+		height: 70px;
+	}
+	.slider{
+		width: 100%;
+	}
+	.slider__container{
+		overflow: auto;
+	}
+	.slider__item p {
+		display: none;
+	}
+	.slider__item{
+		padding: 0px;
+		margin: 0px;
+		margin-top: 27px;
+		border-width: 0px;
+		background-color: white;
+		border-radius: 0px;
+	}
+	.slider__image{
+		width: 50px;
+		height: 50px;
+	}
+	.slider__buttons{
+		display: none;
+	}
+	.about__grid{
+		display: block;
+	}
+	.about__item{
+		margin-top: 32px;
+	}
+	.about__item_d{
+		display: block;
+		text-align: center;
+	}
+	.about .about__grid .about__item div h2{
+		font-size: 20px;
+	}
+	.about .about__grid .about__item div p{
+		font-size: 14px;
+	}
+	.about .about__grid .about__item .about__text_special{
+		font-size: 14px;
+	}
+	.about .about__grid .about__item .about__item_link a{
+		font-size: 14px;
+	}
+	.about .about__grid .about__item .about__text_marked{
+		font-size: 14px;
+	}
+}

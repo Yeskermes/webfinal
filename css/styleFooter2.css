@@ -1,0 +1,314 @@
+div, footer {
+    display: block;
+}
+a, div, img, p, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.wrapper1{
+    background-color: #f2f5f7;
+}
+.SlCourses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 86px;
+    background-color: #f2f5f7;
+    min-height: 100vh;
+}
+.SlCourses__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sl-learn-course_title{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 110%;
+    text-align: center;
+    color: #b30000;
+    margin: 87px auto 45px;
+}
+.sl-course-item__info__learners{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 70%;
+    text-align: center;
+    color: #333399;
+}
+.sl-course-item {
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    background: #f9f9fa;
+    border: 1.8px solid #dce2e5;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: 0 4px 0 rgb(107 127 153 / 50%);
+}
+.sl-course-item:hover {
+    transform:translateY(-2px);
+    box-shadow:0 6px 0 rgba(107,127,153,0.5);
+}
+.sl-course-item:active {
+    transform:translateY(4px);
+    box-shadow:0 0 0 rgba(107,127,153,0.5);
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:focus {
+    outline: none;
+}
+.sl-course-item__progress {
+    width: 80%;
+    height: 80%;
+}
+.sl-course-item__progress__icon {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.sl-course-item__progress__icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+.sl-course-item__info {
+    margin-top: 13px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sl-course-item__info__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 110%;
+    text-align: center;
+    margin-top: 10%;
+    color: #b30000;
+}
+
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    div {
+    display: block;
+}
+a, div, img, p, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+} 
+.SlCourses {
+    padding: 0 0 137px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f5f7;
+    min-height: 100vh;
+}
+.SlCourses__container {
+    max-width: 555px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+} 
+
+.wrapper1 .SlCourses h1{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    color: #2d3846;
+    margin: 87px auto 45px;
+    padding-bottom: 100px;
+}
+.sl-course-item {
+    padding: 28px 19px 15px;
+    width: 155px;
+    height: 196px;
+    margin: 16px 15px;
+    background: #f9f9fa;
+    border: 1.8px solid #dce2e5;
+    box-sizing: border-box;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: 0 4px 0 rgb(107 127 153 / 50%);
+}
+a {
+    text-decoration: none;
+}
+a, a:focus {
+    outline: none;
+}
+.sl-course-item__info__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 110%;
+    text-align: center;
+    color: #2d3846;
+} 
+img {
+    vertical-align: middle;
+    border: 0;
+    }
+}
+
+
+.sl-home-sign-up2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 608px;
+    text-align: center;
+}
+.sl-home-sign-up2__title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+}
+.sl-home-sign-up2__action-btn-wrapper {
+    width: 480px;
+    margin-top: 51px;
+}
+.sl-home-sign-up2__action-btn-wrapper__btn {
+    width: 100%;
+}
+.sl-home-action-btn {
+    font-family: inherit;
+}
+.sl-home-action-btn--primary {
+    color: #f9f9fa;
+    background-color: #2493df;
+    border: none;
+}
+.sl-home-action-btn--primary, .sl-home-action-btn--secondary {
+    height: 48px;
+    padding: 0 60px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color .1s linear;
+}
+
+.sl-footer {
+    width: 100%;
+    margin-top: auto;
+}
+.sl-social-links {
+    font-family: Fira Sans;
+    background: #1f1e28;
+    border-top: 1px solid rgba(108,127,153,0.2);
+}
+.sl-social-links__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1554px;
+    padding: 40px 25px;
+    margin: 0 auto;
+}
+.sl-social-links__links-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+}
+.sl-social-links__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sl-social-links__item a {
+    outline: none;
+    text-decoration: none;
+}
+.sl-social-links__icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 18px;
+    flex: 0 0 auto;
+}
+.sl-social-links__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    max-width: 105px;
+    color: #fff;
+}
+.sl-footer-links {
+    font-family: Fira Sans;
+    background: #18171d;
+}
+.sl-footer-links__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1554px;
+    padding: 40px 25px;
+    margin: 0 auto;
+}
+.sl-footer-links__links-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sl-footer-links__item {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #5a6776;
+    margin-right: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.sl-footer-links__copyright {
+    color: #5a6776;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.sl-footer-links__heart-icon {
+    width: 20px;
+    height: 16px;
+    color: #ef4343;
+    margin: 0 .5em;
+}

@@ -1,0 +1,43 @@
+.leftToRight {
+  animation-name: LeftToRight;
+  animation-duration: 1.5s;
+}
+.rightToLeft{
+  animation-name: RightToLeft;
+  animation-duration: 1.5s;
+}
+.bottomToUp {
+  animation-name: BottomToUp;
+  animation-duration: 1s;
+}
+@keyframes LeftToRight {
+  0% {
+    transform: translateX(-1800px) scale(0.7);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes RightToLeft {
+  0% {
+    transform: translateX(1800px) scale(0.7);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes BottomToUp {
+  0% {
+    transform: translateY(1200px) scale(0.7);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
