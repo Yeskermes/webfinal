@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/discountstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/styleFooter.css">
+<body>
+	<header>
+        <a href="index.html" class="logo"><img src="images/logo.jpeg" height="34px"></a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+    	<nav class="navbar">
+        <a href="index.html">Discounts</a>
+        <a href="courses.html">Menu</a>
+        <a href="menu.html">About us</a>
+        <a href="contact.html">Contacts</a>
+        <a href="menu.html">Order</a>
+        <a href="localstorage-part3.html">Login</a>
+    </nav>
+    </header>
+	<main>
+	<div class="page-container">
+		<div class="tam-contact">
+			<section class="tam-contact__section">
+				<h1>Our addresses</h1>
+				<div id="map"></div>
+			</section>
+			<br><br>
+					<section class="tam-contact__section">
+						<h1><strong>TAM company</strong></h1>
+						<p>2.mk-r Almagul 18a, st. Ryskulova,
+							<br>Taraz city, Kazakhstan</p>
+							<p> <br> <strong>Our contacts</strong>:&nbsp; +77765700995 <br><br>
+								<strong>If you want to become partners, then write</strong>:&nbsp;info@tam.com<br><br>
+							</p>
+					</section>
+				</div>
+			</div>
+		</main>
+		<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+        <script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [42.89, 71.35],
+                    zoom: 13
+                });
+
+                DG.marker([42.89, 71.35]).addTo(map).bindPopup('Вы кликнули по мне!');
+            });
+        </script>
+        <footer class="sl-footer">
+			<div class="sl-social-links">
+				<div class="sl-social-links__container">
+					<div class="sl-social-links__links-block">
+						<a class="sl-social-links__item" href="https://www.linkedin.com/company/sololearn-inc-/" target="_blank">
+							<div class="sl-social-links__icon" style="color: rgb(0, 119, 181);">
+								<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="width: 100%; height: 100%;">
+							</div>
+							<span class="sl-social-links__text">Follow us on Linkedin</span>
+						</a>
+						<a class="sl-social-links__item" href="https://www.facebook.com/SoloLearn" target="_blank">
+							<div class="sl-social-links__icon" style="color: rgb(66, 103, 178);">
+								<img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" style="width: 100%; height: 100%;">
+							</div>
+							<span class="sl-social-links__text">Check out our facebook</span>
+						</a>
+						<a class="sl-social-links__item" href="https://twitter.com/SoloLearn" target="_blank">
+							<div class="sl-social-links__icon" style="color: rgb(29, 161, 242);">
+								<img src="https://cdn-icons-png.flaticon.com/512/1409/1409937.png" style="width: 100%; height: 100%;">
+							</div>
+							<span class="sl-social-links__text">See what we tweet about</span>
+						</a>
+						<a class="sl-social-links__item" href="https://www.instagram.com/sololearn/" target="_blank">
+							<div class="sl-social-links__icon">
+								<img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" style="width: 100%; height: 100%;">
+							</div>
+							<span class="sl-social-links__text">Join our instagram</span>
+						</a>
+						<a class="sl-social-links__item" href="https://www.youtube.com/channel/UCXiOyrjY_jqNCFoQTotILTw" target="_blank">
+							<div class="sl-social-links__icon" style="color: rgb(255, 0, 0);">
+								<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" style="width: 100%; height: 100%;">
+							</div>
+							<span class="sl-social-links__text">Watch our Youtube</span>
+						</a>
+					</div> 
+				</div>
+			</div>
+			
+		</footer>
+</body>
+</html>
