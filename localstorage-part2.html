@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>
+            REGISTRATION
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/styleFooter.css">
+        <link rel="stylesheet" type="text/css" href="css/styleForm.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/discountstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/5a670dfc56.js" crossorigin="anonymous"></script>
+      </head>
+      <body>
+      <header>
+        <a href="index.html" class="logo"><img src="images/logo.jpeg" height="34px"></a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a href="index.html">Discounts</a>
+        <a href="courses.html">Menu</a>
+        <a href="menu.html">About us</a>
+        <a href="contact.html">Contacts</a>
+        <a href="menu.html">Order</a>
+        <a href="localstorage-part3.html">Login</a>
+    </nav>
+    </header>
+    <main class="main__wrapper">
+        <div class="container">
+          <h2>Sign Up</h2>
+          <form id="form" class="form">
+            
+           <div class="form-control">
+              <p class="label" for="email">Email</p>
+              <input type="email" class="form-group" id="email"  name="email" onblur="checkEmail()">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+          <div class="form-control">
+                  <p class="label" for="name">Name</p>
+                  <input type="text" class="form-group" id="name"  name="email" onblur="checkName()">
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+          </div>
+            <div class="form-control">
+              <p class="label" for="pwd">Password</p>
+              <input type="password" class="form-group" id="psw"  name="pwd" onblur="checkPsw()">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="btn1">
+            <button onclick="saveData()" id="save_btn" class="btn btn-default">Sign up</button>
+          </div>
+          <div class="text">Already have an account? <a href="localstorage-part3.html">Sign up</a></div>
+           </form>
+        </div>
+      </main>
+    <footer class="sl-footer">
+      <div class="sl-social-links">
+        <div class="sl-social-links__container">
+          <div class="sl-social-links__links-block">
+            <a class="sl-social-links__item" href="https://www.linkedin.com/company/sololearn-inc-/" target="_blank">
+              <div class="sl-social-links__icon" style="color: rgb(0, 119, 181);">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">Follow us on Linkedin</span>
+            </a>
+            <a class="sl-social-links__item" href="https://www.facebook.com/SoloLearn" target="_blank">
+              <div class="sl-social-links__icon" style="color: rgb(66, 103, 178);">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">Check out our facebook</span>
+            </a>
+            <a class="sl-social-links__item" href="https://twitter.com/SoloLearn" target="_blank">
+              <div class="sl-social-links__icon" style="color: rgb(29, 161, 242);">
+                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409937.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">See what we tweet about</span>
+            </a>
+            <a class="sl-social-links__item" href="https://www.instagram.com/sololearn/" target="_blank">
+              <div class="sl-social-links__icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">Join our instagram</span>
+            </a>
+            <a class="sl-social-links__item" href="https://www.youtube.com/channel/UCXiOyrjY_jqNCFoQTotILTw" target="_blank">
+              <div class="sl-social-links__icon" style="color: rgb(255, 0, 0);">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">Watch our Youtube</span>
+            </a>
+          </div> 
+        </div>
+      </div>
+
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/validation1.js"></script>
+      </body>
+      <script>
+function saveData()
+{
+let name,email,psw;
+email=document.getElementById("email").value;
+name=document.getElementById("name").value;
+psw=document.getElementById("psw").value;
+
+let user_records=new Array();
+user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+if(user_records.some((v)=>{return v.email==email}))
+{
+  alert("duplicate data");
+}
+else
+{
+  user_records.push({
+  "email":email,
+  "name":name,
+  "psw":psw
+})
+  alert("You have successfully registered!");
+localStorage.setItem("users",JSON.stringify(user_records));
+}
+
+}
+          </script>
+      </html>
+      

@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            Profile 
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/discountstyle.css">
+        
+        <link rel="stylesheet" href="css/adminPanel.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      </head>
+      <body>
+      <header>
+      <a href="#" class="logo"><img src="images/logo.jpeg" height="34px" width="121px"></a>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+          <a class="item" style="text-transform: uppercase; font-weight: bold">Welcome <script>document.write(localStorage.getItem('name'));</script></a>
+          <a class="item"><button onclick="Logout();" style="float: right;">Logout</button></a>
+
+      </header>
+      <div class="container">
+        <h2>Admin panel</h2>
+      </div>
+        <div class="product-app-container">
+      <div class="product-app-wrapper">
+    <div class="button">
+          <button onclick="createItem()" class="btn btn-success">CREATE</button>
+          <button onclick="readItem()" class="btn btn-info">READ</button>
+          <button onclick="updateItem()" class="btn btn-primary">UPDATE</button>
+          <button onclick="deleteItem()" class="btn btn-danger">DELETE</button>
+        </div>
+        <div class="blocks left">
+        <form action="javascript:;" class="form">
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Email"
+            aria-required="true"
+          /><br>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            aria-required="true"
+          /><br>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            aria-required="true"
+          />
+        </form>
+      </div>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/table.js"></script>
+      </body>
+      <script>
+        let name=localStorage.getItem('name')?localStorage.getItem('name'):''
+        console.log(name);
+        if(name=='')
+        {
+          alert('U need to login first');
+          window.location.href="localstorage-part3.html";
+        }
+        function Logout()
+        {
+          localStorage.removeItem('name');
+          localStorage.removeItem('email');
+          window.location.href="localstorage-part3.html";
+        }
+  </script>
+      </html>
+      
